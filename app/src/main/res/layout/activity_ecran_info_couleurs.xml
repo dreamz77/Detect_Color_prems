@@ -8,83 +8,157 @@
     tools:context=".EcranInfoCouleurs">
     <?xml version="1.0" encoding="utf-8"?>
 
-    <View
-        android:id="@+id/rectangle_"
-        android:layout_width="442dp"
-        android:layout_height="68dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/capture_d_cran_2021_05_25___10_25_49"
-        android:visibility="visible"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:visibility="visible" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="201dp"
-        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
         android:gravity="center"
         android:text="Indications"
         android:textSize="24sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton11"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="13dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="376dp"
-        android:layout_height="75dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="548dp"
         android:text="Les couleurs associées correspondent aux teintes qui se rapproches de la couleur sélectionnée."
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="108dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="428dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#03A9F4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="596dp"
+        app:layout_anchorGravity="start|center"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Parametres"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="375dp"
-        android:layout_height="120dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="26dp"
         android:text="Vous pouvez marier ces couleurs en les assemblant vestimentairement ou encore pour effectuer un dégradé de couleur dans vos créations (dessin, peinture...)
 "
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="376dp"
-        android:layout_height="102dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="13dp"
         android:text="Les couleurs opposées correspondent à la couleur complémentaire et deux autres proches, opposées à couleur sélectionnée sur le cercle chromatique.
 "
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="342dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="376dp"
-        android:layout_height="120dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="154dp"
         android:text="Vous pouvez employer ces couleurs pour créer un contraste vestimentairement, pour vos créations (peinture, dessin ...) ainsi que pour votre décoration (fleurs, murs ...)"
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="457dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="MissingConstraints" />
 
     <!--tom est nul-->
 
