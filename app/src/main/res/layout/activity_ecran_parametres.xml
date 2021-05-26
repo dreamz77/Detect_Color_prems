@@ -8,6 +8,19 @@
     android:background="#D8EBF5"
     tools:context=".Ecran_Parametres">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="576dp"
+        android:background="#03A9F4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="wrap_content"
@@ -39,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
@@ -49,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -59,6 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
@@ -103,12 +119,14 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:gravity="center"
-        android:text="Indications"
+        android:text="Parametres"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_anchorGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -121,7 +139,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <ImageButton
             android:id="@+id/imageButton8"
@@ -131,9 +149,9 @@
             android:background="@null"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/icone_parametres"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="316dp"
-            tools:layout_editor_absoluteY="9dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="9dp" />
 
         <ImageButton
             android:id="@+id/imageButton9"
@@ -143,9 +161,9 @@
             android:background="@null"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/icone_loup"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="11dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="11dp" />
 
         <ImageButton
             android:id="@+id/imageButton10"
@@ -155,9 +173,9 @@
             android:background="@null"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/icone_home"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="9dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="9dp" />
 
     </android.support.constraint.ConstraintLayout>
 
