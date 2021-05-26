@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8EBF5"
+    tools:context=".Ecran_Parametres">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rectangle_jaune_long_arrondi_"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rectangle_jaune_long_arrondi_"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.DetectColor.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Indications"
+        android:textSize="24sp"
+        app:layout_anchor="@+id/rectangle_2"
+        app:layout_anchorGravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/rectangle_2"
+        app:layout_anchorGravity="start|center"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rectangle_jaune_long_arrondi_"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DetectColor">
-        <activity android:name=".EcranInfoCouleurs"></activity>
+        <activity
+            android:name=".Ecran_Parametres"
+            android:label="@string/title_activity_ecran_parametres"
+            android:theme="@style/Theme.DetectColor.NoActionBar"></activity>
+        <activity android:name=".EcranInfoCouleurs" />
         <activity android:name=".ResultatActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
